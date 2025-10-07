@@ -85,3 +85,5 @@ def run_help_desk():
 if __name__ == "__main__":
     run_help_desk()
 
+#a stack is the right choice for undo/redo because it works in a last-In, first-Out way. The last action a user does should be the first one undone. For example, if someone types several names, the most recent name should be removed first when they hit undo. Using a stack, each action is added to the top and removed from the top, which matches how undo and redo operations need to work.
+#a queue is better for a help desk because it works in a first-In, first-Out way. The first person to ask for help should be served first. Queues keep requests in order, so everyone gets help in the order they arrived. While Python lists can be used for stacks and queues, the way we use them is different. Stacks only add or remove from the end, and queues add at one end and remove from the other. This makes stacks and queues easier to use for these taks.
